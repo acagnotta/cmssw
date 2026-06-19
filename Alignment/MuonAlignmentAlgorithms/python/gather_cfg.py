@@ -333,3 +333,5 @@ elif maxEvts > 10:
   process.MessageLogger.cerr.FwkReport.reportEvery = maxEvts//10
 
 # print(process.dumpPython())
+
+# raise RuntimeError("This is not meant to be run directly. Use gather.py instead.")

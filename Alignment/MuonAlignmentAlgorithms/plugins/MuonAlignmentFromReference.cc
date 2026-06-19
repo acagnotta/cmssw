@@ -218,6 +218,7 @@ MuonAlignmentFromReference::MuonAlignmentFromReference(const edm::ParameterSet& 
       m_globTackingToken(iC.esConsumes()),
       m_MagFieldToken(iC.esConsumes()),
       m_propToken(iC.esConsumes(edm::ESInputTag("", "SteppingHelixPropagatorAny"))),
+      // m_propToken(iC.esConsumes(edm::ESInputTag("", "SmartPropagatorAnyRKOpposite"))),
       m_builderToken(iC.esConsumes(MuonResidualsFromTrack::builderESInputTag())),
       m_muonCollectionTag(cfg.getParameter<edm::InputTag>("muonCollectionTag")),
       m_reference(cfg.getParameter<std::vector<std::string> >("reference")),
